@@ -1,0 +1,1 @@
+# This project uses plain HTML/CSS/JavaScript and does not require any dependencies.
