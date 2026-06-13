@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HARSHIT's Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="harshit-tic-tac-toe.css">
+</head>
+
+<body>
+  <button class="custom-btn" type="button" onclick="openPopup()">RULES 📂 </button>
+  <button class="restart-btn" type="button" onclick="restartGame()">🔄<br><span style="font-size: 30px;">RESTART</span></button>
+
+  <div class="scoreboard">
+    🏆 SCOREBOARD 🏆<br>
+    ❌ Wins: <span id="xWins">0</span><br>
+    ⭕ Wins: <span id="oWins">0</span>
+  </div>
+
+  <div class="popup" id="popupBox">
+    <p class="popup-text">
+      1. The goal is to align 3 marks to win.<br>
+      2. Marks could be aligned vertically, horizontally, or digonally.<br>
+      3. Each player can have only 3 active moves.<br>
+      4. Oldest move disappears after 3 moves.<br>
+      5. Game continues infinitely.
+    </p>
+    <button class="close-btn" type="button" onclick="closePopup()">CLOSE ❌</button>
+  </div>
+
+  <h1>♾ INFINITE TIC TAC TOE ♾</h1>
+
+  <div class="board" id="board"></div>
+
+  <p id="status">Player X's Turn</p>
+
+  <script src="harshit-tic-tac-toe.js"></script>
+</body>
+</html>
+
