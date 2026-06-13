@@ -1,0 +1,136 @@
+body {
+  background: radial-gradient(circle, #ff0000, #0000ff);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 15px black;
+  margin-top: 4%;
+  font-size: 300%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 135px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.cell {
+  width: 125px;
+  height: 120px;
+  background: white;
+  border: 5px solid black;
+  box-shadow: 0 0 15px cyan;
+  font-size: 4.0em;
+  color: white;
+  text-shadow: 3px 3px 4px black,
+    3px -3px 4px black,
+    -3px 3px 4px black,
+    -3px -3px 4px black,
+    3px 3px 4px black,
+    3px -3px 4px black,
+    -3px 3px 4px black,
+    -3px -3px 4px black,
+    3px 3px 4px black,
+    3px -3px 4px black,
+    -3px 3px 4px black,
+    -3px -3px 4px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1.0s;
+}
+
+.cell:hover {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+#status {
+  margin-top: 4%;
+  font-size: 3em;
+  text-shadow: 0 0 5px black,
+    3px 0 5px black,
+    -3px 0 5px black,
+    0 3px 5px black,
+    0 -3px 5px black;
+}
+
+.custom-btn {
+  padding: 12px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.restart-btn {
+  padding-top: 35px;
+  background: radial-gradient(circle, orange, orange);
+  color: black;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 116px;
+  line-height: 0.5;
+  height: 207px;
+  width: 195px;
+  position: fixed;
+  top: 37%;
+  left: 12%;
+}
+
+.scoreboard {
+  position: fixed;
+  top: 42%;
+  right: 7%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 27px;
+  height: 115px;
+  width: 310px;
+  box-shadow: 0 0 10px cyan;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  text-align: center;
+}
+
+.popup p {
+  margin: 8px 0;
+}
+
+.popup-text {
+  font-size: 25px;
+  color: white;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
